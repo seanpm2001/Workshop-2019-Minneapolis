@@ -1,0 +1,38 @@
+NilssonSeries = new Type of List
+{
+  NilssonTerm {..},
+  NilssonTerm {..},
+  ...
+}
+
+presented as a sum with functions *, +, etc. defined 
+
+NilssonTerm = new Type of HashTable
+{
+  MonomialExponents => {1/2,0}
+  PolynomialInLog   => xy-1/3y
+}
+
+x^(1/2) (log(x)log(y) - 1/3 log(y)
+
+x^(1/2) (l_x l_y - 1/3 l_y)
+
+
+
+u -> log(x)
+v -> log(y)
+
+uv  : log(x)log(y)
+u+v : log(x) + log(y) = log(xy)
+
+
+We won't need this:
+ log(x+y)
+
+
+C-x 8 [Enter] 03B8 [Enter]
+restart
+S = QQ[θ];
+gens S
+θ^2
+S_0^2
