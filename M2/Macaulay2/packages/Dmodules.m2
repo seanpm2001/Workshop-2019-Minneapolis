@@ -14,6 +14,10 @@ newPackage("Dmodules",
      PackageImports => {"PrimaryDecomposition","ReesAlgebra","Elimination"}
      )
 
+-- TODO: will move to core
+export' := lookup(export, List)
+export List := v -> export' select(v, s -> s =!= null)
+
 export { "kappaAnnF1PlanarCurve", "reiffen", "kOrderAnnFa", "kOrderAnnFs",
      "localBFunction", "multiplierIdeal", "ViaElimination", "ViaColonIdeal", "ViaLinearAlgebra",
      "isInMultiplierIdeal", "generalizedBFunction", "mGeneralizedBFunction",
