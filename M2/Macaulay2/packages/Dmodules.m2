@@ -80,6 +80,27 @@ export {
     -- createThetaRing
     }
 
+-- TODO
+-- Anton's algorithms
+load "./Dmodules/paramBpoly.m2" -- seems to be outdated
+export {
+    "GroundField",
+    "paramBpoly",
+    }
+
+-- Anton's algorithms
+load "./Dmodules/stafford.m2" -- TODO
+export {
+    -- leadMonomial -- TODO: evict
+    "stafford",
+    }
+load "./Dmodules/makeCyclic.m2"
+export {
+    "AnnG",
+    "Generator",
+    "makeCyclic",
+    }
+
 --------------------------------------------------------------------------------
 -- HolonomicSystems
 --------------------------------------------------------------------------------
@@ -93,13 +114,6 @@ export {
     "AppellF1",
     "reiffen",
     "Vars",
-    }
--- Anton's algorithms
-load "./Dmodules/makeCyclic.m2"
-export {
-    "AnnG",
-    "Generator",
-    "makeCyclic",
     }
 -- Christine's algorithms
 load "./Dmodules/canonicalSeries.m2"
@@ -122,6 +136,18 @@ export {
     -- solvePrimaryFrobeniusIdeal
     "solveFrobeniusIdeal",
     }
+
+-- DifferentialOperators
+-- Harry's algorithms
+load "./Dmodules/DiffOps.m2"
+export {
+    "PolyGens",
+    "BasisElts",
+    "diffOps",
+    "putWeylAlgebra",
+    }
+load "./Dmodules/WeylClosure.m2"
+export { "WeylClosure" }
 
 --------------------------------------------------------------------------------
 -- BernsteinSato
@@ -209,6 +235,7 @@ export {
     }
 
 --------------------------------------------------------------------------------
+-- LocalCohomology
 --------------------------------------------------------------------------------
 
 -- Harry's algorithms
@@ -260,10 +287,6 @@ export { "Ddual" }
 
 -- tests
 TEST get(currentFileDirectory | "Dmodules/TST/Drestriction.tst.m2")
-
---------------------------------------------------------------------------------
--- LocalCohomology
---------------------------------------------------------------------------------
 
 -- Harry's algorithms
 load "./Dmodules/Dlocalize.m2" -- FIXME: needs gbW2, charIdeal
@@ -345,39 +368,6 @@ export {
     "ICmodule",
     "ICcohom",
     "LocCohomStrategy",
-    }
-
---------------------------------------------------------------------------------
--- DifferentialOperators
---------------------------------------------------------------------------------
--- TODO: combine with the above?
-
--- Harry's algorithms
-load "./Dmodules/DiffOps.m2"
-export {
-    "PolyGens",
-    "BasisElts",
-    "diffOps",
-    "putWeylAlgebra",
-    }
-load "./Dmodules/WeylClosure.m2"
-export { "WeylClosure" }
-
---------------------------------------------------------------------------------
--- TODO
---------------------------------------------------------------------------------
-
--- Anton's algorithms
-load "./Dmodules/paramBpoly.m2" -- seems to be outdated
-export {
-    "GroundField",
-    "paramBpoly",
-    }
-
-load "./Dmodules/stafford.m2" -- TODO
-export {
-    -- leadMonomial -- TODO: evict
-    "stafford",
     }
 
 --------------------------------------------------------------------------------
