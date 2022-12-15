@@ -27,7 +27,7 @@ shifts := (m, w, oldshifts) -> (
 --------------------------------------------------------------------------------
 --------------------------------------------------------------------------------
 
-importFrom_Core {"raw", "rawKernelOfGB"}
+importFrom_Core {"rawKernelOfGB"}
 kerGB := m -> (
      -- m should be a matrix which is a GB, and
      -- whose source has the Schreyer order.
